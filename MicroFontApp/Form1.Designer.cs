@@ -31,12 +31,13 @@
             this.butGenerate = new System.Windows.Forms.Button();
             this.txtInputText = new System.Windows.Forms.TextBox();
             this.picGeneratedImage = new System.Windows.Forms.PictureBox();
+            this.chkInvertColours = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picGeneratedImage)).BeginInit();
             this.SuspendLayout();
             // 
             // butGenerate
             // 
-            this.butGenerate.Location = new System.Drawing.Point(615, 185);
+            this.butGenerate.Location = new System.Drawing.Point(360, 185);
             this.butGenerate.Name = "butGenerate";
             this.butGenerate.Size = new System.Drawing.Size(75, 23);
             this.butGenerate.TabIndex = 0;
@@ -49,7 +50,7 @@
             this.txtInputText.Location = new System.Drawing.Point(13, 13);
             this.txtInputText.Multiline = true;
             this.txtInputText.Name = "txtInputText";
-            this.txtInputText.Size = new System.Drawing.Size(677, 166);
+            this.txtInputText.Size = new System.Drawing.Size(422, 166);
             this.txtInputText.TabIndex = 1;
             this.txtInputText.Text = "The quick brown fox\r\njumped over the lazy dog\r\n0123456789\r\n!\"\'#$%&*()-+=:;@<>,.?/" +
     "[]";
@@ -57,17 +58,28 @@
             // picGeneratedImage
             // 
             this.picGeneratedImage.BackColor = System.Drawing.Color.Black;
-            this.picGeneratedImage.Location = new System.Drawing.Point(12, 291);
+            this.picGeneratedImage.Location = new System.Drawing.Point(12, 235);
             this.picGeneratedImage.Name = "picGeneratedImage";
-            this.picGeneratedImage.Size = new System.Drawing.Size(677, 298);
+            this.picGeneratedImage.Size = new System.Drawing.Size(423, 198);
             this.picGeneratedImage.TabIndex = 2;
             this.picGeneratedImage.TabStop = false;
+            // 
+            // chkInvertColours
+            // 
+            this.chkInvertColours.AutoSize = true;
+            this.chkInvertColours.Location = new System.Drawing.Point(13, 185);
+            this.chkInvertColours.Name = "chkInvertColours";
+            this.chkInvertColours.Size = new System.Drawing.Size(90, 17);
+            this.chkInvertColours.TabIndex = 3;
+            this.chkInvertColours.Text = "Invert colours";
+            this.chkInvertColours.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 601);
+            this.ClientSize = new System.Drawing.Size(449, 451);
+            this.Controls.Add(this.chkInvertColours);
             this.Controls.Add(this.picGeneratedImage);
             this.Controls.Add(this.txtInputText);
             this.Controls.Add(this.butGenerate);
@@ -84,6 +96,7 @@
         private System.Windows.Forms.Button butGenerate;
         private System.Windows.Forms.TextBox txtInputText;
         private System.Windows.Forms.PictureBox picGeneratedImage;
-    }
+		private System.Windows.Forms.CheckBox chkInvertColours;
+	}
 }
 

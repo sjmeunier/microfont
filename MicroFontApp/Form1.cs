@@ -21,7 +21,7 @@ namespace MicroFontApp
         private void butGenerate_Click(object sender, EventArgs e)
         {
             MicroFont.MicroFont microFont = new MicroFont.MicroFont();
-            picGeneratedImage.Image = microFont.Generate(txtInputText.Text, picGeneratedImage.Width, picGeneratedImage.Height, 5, 5);
+            picGeneratedImage.Image = microFont.Generate(txtInputText.Text, picGeneratedImage.Width, picGeneratedImage.Height, 5, 5, chkInvertColours.Checked);
 
         }
     }
