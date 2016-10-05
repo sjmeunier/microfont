@@ -12,7 +12,7 @@ namespace MicroFont
 
         }
 
-		public Size MeasaureText(string text, int xPadding, int yPadding)
+		public Size MeasureText(string text, int xPadding, int yPadding)
 		{
 			Size size = new Size(xPadding, yPadding);
 
@@ -42,7 +42,7 @@ namespace MicroFont
 
 		public Bitmap Generate(string text, int xPadding, int yPadding, bool invertColours)
 		{
-			Size size = MeasaureText(text, xPadding, yPadding);
+			Size size = MeasureText(text, xPadding, yPadding);
 			return Generate(text, size.Width, size.Height, xPadding, yPadding, invertColours);
 		}
 
