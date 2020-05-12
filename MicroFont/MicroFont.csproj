@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FontDefinition.cs" />
+    <Compile Include="MicroFontDefinition.cs" />
     <Compile Include="MicroFont.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
